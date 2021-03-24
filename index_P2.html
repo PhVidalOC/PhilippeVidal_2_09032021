@@ -22,17 +22,58 @@
             </div>
 
 
-        <!-- Nav *Liste -->
-            <!-- choix hebergent-->
+        <!-- Nav *Liste --><!-- fieldset-->
+            
             <!-- choix activités-->
             <!-- s'inscrire-->
+                
             <nav>
                 <ul>
-                    <li><a href="#Hebergement-html">Hébergement</a></li>
-                    <!--Auberge_Hotel_Chambres d'hotes -->
-                    <li><a href="#Activités-html">Activités</a></li>
-                    <!-- sites_naturel_Monument_ -->
-                    <li><a href="#S'inscrire-html">S'inscrire</a></li>
+                    <li><a href="#hebergement-html">Hébergement</a></li>
+                   
+                <!-- choix hebergent-->
+                <!--Auberge_Hotel_Chambres d'hotes -->
+                <fieldset>
+                    <legend>Hébergements</legend> <!-- Titre du fieldset -->
+
+                    <p>
+                    Choix d'hébergement :
+
+                        <input type="radio" name="hebergement" value="auberge" id="auberge" /> <label for="auberge">Auberge</label>
+                        <input type="radio" name="hebergement" value="hotel" id="hotel" /> <label for="hotel">Hôtel</label>
+                        <input type="radio" name="hebergement" value="chambre_hotes" id="chambre_hotes" /> <label for="chambre_hôtes">Chambre d'hotes</label>
+                    </p>
+                </fieldset>
+
+                    <li><a href="#activites-html">Activités</a></li>
+                    <!-- sites_nature_Monument_ -->
+                        <input type="checkbox" name="activites" value="sites" id="sites" /> <label for="sites">Sites remarquable</label>
+                        <input type="checkbox" name="activites" value="nature" id="nature" /> <label for="nature">lieux naturels</label>
+                        <input type="checkbox" name="activites" value="monuments" id="monuments" /> <label for="monuments">Monuments</label>
+                    <!-- s'inscrire-->
+                    <li><a href="#inscription-html">S'inscrire</a></li>
+
+                    <form action="/inscription" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" />
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_mail" />
+                            </li>
+                            <li>
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li class="button">
+                                <button type="submit">Send your message</button>
+                            </li>
+                        </ul>
+                    </form>
+
+
                 </ul>
             </nav>           
     </header>
