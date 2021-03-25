@@ -28,8 +28,8 @@
 
 body
 {
-	font-family: 'ralewayregular', serif;, sanss-serif;
-	color: #181818;
+	font-family: 'ralewayregular', serif, sans-serif;
+	color: #000000;
 }
 
 #logo img
@@ -51,6 +51,14 @@ header h2
 	font-weight: normal;
 }
 
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+    justify-content: space-between;
+    position: relative; 
+}
 nav li
 {
 	margin-right: 15px
@@ -59,13 +67,16 @@ nav a
 {
     font-family: 'ralewaybold', serif;
 	font-size: 1.3em
-	color: #0065FC;
+	color #0065FC;
 	padding-bottom: 3px;
 	text-decoration: none;
 }
-
+li a:visited
+{
+	color: #000000;
+}
 li a:hover
 {
-	color: magenta;
-	border-bottom: 3px solid magenta;
+	color: #008080;
+	border-bottom: 3px solid "lime";
 }
