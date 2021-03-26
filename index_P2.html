@@ -62,27 +62,89 @@
                
     </header>
 
-    <!-- Section selection ville-->
-    <section>
-        <!-- choix ville-->
+    <div id= "recherche">
+        <!-- Section selection ville--> <!-- choix ville-->
             <!-- Baniere selection recherche-->
-            <!-- filtres _ 4 Banieres-->
-                <!-- Logo Tarif -->
-                <!-- Logo Famille-->
-                <!-- Logo Cadre-->
-                <!-- Logo Animaux-->
-    </section>
+        <form method="post" action="traitement.php">
+            <i class="fas fa-map-marker-alt"></i>
+               <input type="text" name="ville" id="ville" placeholder="Ex : Paris"/>
+               <button type="submit">Rechercher</button>
+        </form>
+        
+        <!-- filtres _ 4 Banieres-->
+        <div id= "filtres"> 
+            <p>Filtres
+                <div id="price">
+            <form method="post" action="traitement.php">
+               <!-- Logo Tarif -->
+                <i class="fas fa-money-bill-wave" style= "font-size: 15px; color: #0065FF" ></i>
+                <select name="tarif" id="tarif">
+                <option value="economique">Economique</option>
+                <option value="-cher">Cher</option>
+                <option value="-luxe">Luxe</option>
+                </select>
+            </form>
+                
+            <div id="family">
+                  <!-- Logo Famille-->
+                <form>
+                    <i class="fas fa-child" style="font-size: 15px; color: #0065FF"></i>
+                    <select name="famille" id="famille">
+                    <option value="famille">Familial</option>
+                    <option value="couple">Couple</option>
+                    <option value="seul">Seul(e)</option>
+                    </select>
+                </form>
+            </div>
+                
+            <div id= "type">
+                    <!-- Logo Cadre-->
+                <form>
+                    <i class="fas fa-heart"style="font-size: 15px; color: #0065FF"></i>
+                        <select name="cadreselect" id="cadreselect">
+                        <option value="romantique">Romantique</option>
+                        <option value="moderne">Moderne</option>
+                        <option value="pitoresque">Pitoresque</option>
+                        </select>
+                </form>
+            </div>
 
+                <!-- Logo Animaux-->
+            <div id= "animals">
+                    <form>
+                    <i class="fas fa-dog"style="font-size: 15px;color: #0065FF"></i>
+                    <select name="animaux_y_n" id="animaux_y_n">
+                        <option value="oui">animaux</option>
+                        <option value="non">pas d'animaux</option>
+                    </select>
+                
+                    </form>
+            </div>
+            </p>
+
+
+    </div>
+
+        
+        <section>
         <!-- Section Resultat hebergements dans ville choisie -->
             <!-- liste --->
             <!-- lieu, tarif, avis-->
+        </section>
 
+
+        <aside>
         <!-- Section populaire-->
             <!-- Nav _ Logo Les plus populaire-->
                 <!-- lieu, tarif, avis-->
+        </aside>
 
+        <section>
         <!-- Article Activité ville -->
             <!-- Resultat liste photos avec theme&titre-->
+        </section>
+
+
         <footer>
         <!-- Footer -->
             <!-- Nav A propos-->
@@ -95,5 +157,5 @@
                 <!-- liste -->
                 <!-- Aide_Contact-->
         </footer>
-    </body>
+</body>
 </html>
