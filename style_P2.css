@@ -65,11 +65,9 @@ nav
 	display: flex;
     justify-content: space-between;
     position: relative; 
-}
-nav
-{
 	margin-right: 15px;
 }
+
 nav a
 {
     font-family: 'ralewaybold', serif;
@@ -81,9 +79,15 @@ a:visited
 }
 a:hover
 {
-	color: #008080;
-	border-bottom: 3px #00FF00;
+	color: #DEEBFF;
 }
+
+
+div i
+{
+    background-color: aqua;
+}
+
 
 aside
 {
@@ -91,14 +95,14 @@ aside
 }
 
 
-section
+main
 {
 	background-color: darkgray;
 	border-radius: 15px;
 	width: 60%;
 }
 
-section h1, h2
+main h1, h2
 {
 padding: 0.8em; 
 }
