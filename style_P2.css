@@ -43,30 +43,9 @@ body
 {
 	width: 20%;
 	height: 20%;
-}
-header h1
-{
-	font-family: 'ralewaybold', serif;
-	font-size: 2.5em;
-	font-weight: normal;
-}
-header h2
-{
-	font-family: 'ralewayregular', serif;
-	font-size: 1.1em;
-	margin-top: 0px;
-	font-weight: normal;
+    align-items: flex-start;
 }
 
-
-nav
-{
-	list-style-type: none;
-	display: flex;
-    justify-content: space-between;
-    position: relative; 
-	margin-right: 15px;
-}
 
 nav a
 {
@@ -82,54 +61,102 @@ a:hover
 	color: #DEEBFF;
 }
 
-
-div i
+header h1 h2
 {
-    background-color: aqua;
+    text-align: start;
+    font-family: 'ralewaybold', serif;
+	font-weight: normal;
 }
 
-
-aside
+header h1
 {
-	background-color: gray;
+	font-size: 2.5em;
 }
-
+header h2
+{
+	font-family: 'ralewayregular', serif;
+	font-size: 1.1em;
+	margin-top: 0px;
+	font-weight: normal;
+}
 
 main
 {
-	background-color: darkgray;
-	border-radius: 15px;
-	width: 60%;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
 }
 
-main h1, h2
+.ville
 {
-padding: 0.8em; 
+	background-color: darkgray;
+	border-radius: 15px;
+	width: 625px;
+    height: 440px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.fig1
+{
+width: 180px;
+height: 150px;
+}
+
+
+main h2
+{
+    padding: 0.8em;
+    text-align: left;
+}
+
+.populaires
+{
+    width: 290px;
+    height: 440px;
+    background-color: darkgray;
+	border-radius: 15px;
 }
 
 figure 
 {
-	background-color: #FF00FF;
+    background-color: #FF00FF;
     border: thin #c0c0c0 solid;
     border-radius: 15px;
+    width: 175px;
+	height: 150px;
     display: flex;
-    flex-flow: row wrap;
-    padding: 5px;
-    max-width: 220px;
-	max-height: 350px;
-    margin: auto;
+
+    
 }
 
 img 
 {
-justify-content: center;
-    max-width: 220px;
-	height: 45%;
+	height: 60%;
     border-radius: 10px 10px 0 0;
+    
+}
+
+h4
+{
+    font-size: .7em;
 }
 
 figcaption 
 {
     padding: 3px;
     text-align: left;
+}
+
+
+.activites
+{
+    width: 950px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
