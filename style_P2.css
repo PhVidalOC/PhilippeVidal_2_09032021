@@ -26,18 +26,19 @@
 
 }
 
+
+
+
 body
 {
-	font-family: 'ralewayregular', serif, sans-serif;
-	color: #000000;
+    font-family: 'ralewayregular', serif, sans-serif;
 }
 
-#bloc-page
+#bloc_page
 {
-    width: 1200px;
+    width: 900px;
     margin: auto;
 }
-
 
 #logo img
 {
@@ -47,10 +48,24 @@ body
 }
 
 
+#navigation
+{
+   
+    float: right;
+}
+
+ul
+{
+    list-style-type: none;
+    width: 30%;
+
+}
+
 nav a
 {
     font-family: 'ralewaybold', serif;
-	font-size: 1.3em
+	font-size: 1.3em;
+    text-decoration-line: none;
 }
 a:visited
 {
@@ -59,65 +74,181 @@ a:visited
 a:hover
 {
 	color: #DEEBFF;
+
 }
 
 header h1 h2
 {
     text-align: start;
-    font-family: 'ralewaybold', serif;
 	font-weight: normal;
 }
 
 header h1
 {
 	font-size: 2.5em;
+    font-family: 'ralewayregular', serif;
+
 }
 header h2
 {
-	font-family: 'ralewayregular', serif;
 	font-size: 1.1em;
+    font-family: 'ralewaybold', serif;
+
 	margin-top: 0px;
 	font-weight: normal;
 }
 
+.recherche
+{
+    width: 150px;
+    border-style: solid; color: #555555;
+    margin-left: 30px;
+}
+
+div p
+{
+    font-size: 1.1em;
+    font-family: 'ralewaybold', serif;
+}
+.filtres
+{
+    width: 700px;    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.filter
+{
+    color: #0065FC;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.filterconten
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #DEEBFF;
+}
+
+.filter p
+{
+    color: #000000;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-radius: 0 15px 15px 0;
+    text-align: right;
+    align-items: center;
+    padding: 3px;
+}
+
+.info
+{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.iconContainer
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    margin-left: 10px;
+
+}
+.fa-info
+{
+    color: #0065FC;
+    font-size: 12px;
+    padding-left: 6px;
+    padding-bottom: 3px;
+}
+.info p
+{
+    font-family: 'ralewayregular', serif;
+    padding-left: 15px;
+}
+
+
+
+
 main
 {
+    font-family: 'ralewayregular', serif;
+    width: 100%;
     margin: 15px;
     display: flex;
     justify-content: space-around;
 }
 
+main h2
+{
+    padding-top: .5em;
+    padding-left: .5em;
+}
+
+.fa-star
+{
+    font-size: 12px;
+    color: #0065FC;
+    padding-bottom: 12px;
+}
+
+figcaption 
+{
+    font-family: 'ralewaybold', serif;
+    height: 50px;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+
+}
+figure p
+{
+    font-family: 'ralewayregular', serif;
+    font-size: 15px;
+}
+
 .ville
 {
+    position: relative;
 	background-color: darkgray;
 	border-radius: 15px;
-	width: 625px;
-    height: 440px;
+	width: 60%;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     align-content: space-between;
+    text-align: left;
 }
 
 .fig1
 {
-width: 180px;
-height: 150px;
+width: 30%;
+height: 250px;
+
 }
 
-
-main h2
-{
-    padding: 0.8em;
-    text-align: left;
-}
 
 .populaires
 {
-    width: 290px;
-    height: 440px;
+    text-align: left;
+    width: 30%;
     background-color: darkgray;
 	border-radius: 15px;
+
 }
 
 figure 
@@ -128,35 +259,87 @@ figure
     width: 175px;
 	height: 150px;
     display: flex;
-
+    padding: 3px;
+    flex-direction: column;
+    background-size: cover;
+    text-align: left;
     
+    
+}
+
+figure h3
+{
+    font-size: 1em;
+}
+figure h4
+{
+    font-size: .7em;
 }
 
 img 
 {
 	height: 60%;
     border-radius: 10px 10px 0 0;
-    
+  
 }
 
-h4
-{
-    font-size: .7em;
-}
 
-figcaption 
-{
-    padding: 3px;
-    text-align: left;
-}
+
 
 
 .activites
 {
-    width: 950px;
+    font-family: 'ralewayregular', serif;
+    width: 100%;
     height: 350px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
+
+
+
+
+footer
+{
+    width: 100%;
+    height: 150px;
+    font-family: 'ralewayregular', serif;
+    background-color: lightslategray;
+
+}
+
+footer h2
+{
+    margin: 15px;
+}
+
+li
+{
+    text-align: left;
+}
+#propos, #hebergement, #assistance
+{
+    display: inline-block;
+    vertical-align: top;
+
+}
+#propos
+{
+    width: 25%;
+}
+#propos ul
+{
+    margin: 0;
+    padding-left: 2px;
+}
+#hebergelent
+{
+    width: 28%;
+}
+#assistance
+{
+    width: 30%;
+}
+
