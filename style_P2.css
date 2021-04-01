@@ -27,8 +27,6 @@
 }
 
 
-
-
 body
 {
     font-family: 'ralewayregular', serif, sans-serif;
@@ -40,120 +38,179 @@ body
     margin: auto;
 }
 
+#titre_principal
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
 #logo img
 {
-	width: 20%;
-	height: 20%;
-    align-items: flex-start;
+    width: 100px;
+    height: 100px;
 }
 
-
-#navigation
+#navigation ul
 {
-   
-    float: right;
-}
-
-ul
-{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
     list-style-type: none;
-    width: 30%;
-
 }
 
 nav a
 {
     font-family: 'ralewaybold', serif;
-	font-size: 1.3em;
+	font-size: 1em;
     text-decoration-line: none;
+    padding-right: 3em;
 }
 a:visited
 {
-	color: #000000;
+    color: #0065fc;
 }
 a:hover
 {
-	color: #DEEBFF;
-
+    text-decoration-line: overline;
+    color: #005500;
 }
 
-header h1 h2
+
+section
 {
-    text-align: start;
-	font-weight: normal;
+    width: 100%;
 }
 
-header h1
+h1
 {
-	font-size: 2.5em;
-    font-family: 'ralewayregular', serif;
-
+	font-size: 1.5em;
+    font-family: 'ralewaybold', serif;
 }
-header h2
+h2
 {
 	font-size: 1.1em;
     font-family: 'ralewaybold', serif;
-
-	margin-top: 0px;
 	font-weight: normal;
 }
-
-.recherche
+h3
 {
-    width: 150px;
-    border-style: solid; color: #555555;
-    margin-left: 30px;
-}
-
-div p
-{
-    font-size: 1.1em;
     font-family: 'ralewaybold', serif;
-}
-.filtres
-{
-    width: 700px;    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    font-size: .8em;
 }
 
-
-.filter
+h4
 {
-    color: #0065FC;
-    position: relative;
+    font-family: 'ralewaybold', serif;
+    font-size: 0.7em;
+}
+
+h5
+{
+    font-family: 'ralewayregular', serif;
+    font-size: 0.7em;}
+
+
+#recherche
+{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
     
+    border-style: solid;
+    border-color: #F2F2F2;
+    font-family: 'ralewaybold', serif;
+    margin-top: 20px;
+}
+#map
+{
+    width: 10%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background-color: #F2F2F2;
+}
+.fa-map-marker-alt
+{   
+    padding-top: 6px;
+    padding-left: 6px;
+}
+#ville_fr
+{
+    line-height: 0px;
+    text-align: center;
 }
 
-.filterconten
+button
 {
-    position: relative;
+    width: 40%;
+    height: 110%;
+    border-radius:  0 8px 8px 0;
+    border: none;
+    font-family: 'ralewaybold', serif;
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+
+#filtres
+{
+    font-family: 'ralewaybold', serif;
+    width: 80%;    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.filter
+{
+    height: 29px;
+    border-radius: 15px;
+    display: flex;
+
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    border-style: solid;
+    border-color: #F2F2F2;
+    margin-top: 10px;
+}
+.iconfilter
+{
+    color:#0065fc;
     width: 30px;
     height: 30px;
     border-radius: 15px;
     background-color: #DEEBFF;
-}
 
+}
+.fa-map-marker-alt, .fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave
+{
+    margin-top: .4em;
+    margin-left: .3em;
+}
 .filter p
 {
     color: #000000;
-    border-style: solid;
-    border-color: #F2F2F2;
-    border-radius: 0 15px 15px 0;
-    text-align: right;
-    align-items: center;
-    padding: 3px;
+    margin-left: 30px;
+    padding-right: 15px;
 }
+
 
 .info
 {
-    margin-left: 20px;
+
+    margin-left: 15px;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
 }
@@ -165,7 +222,6 @@ div p
     border-radius: 10px;
     border-style: solid;
     border-color: #F2F2F2;
-    margin-left: 10px;
 
 }
 .fa-info
@@ -180,9 +236,6 @@ div p
     font-family: 'ralewayregular', serif;
     padding-left: 15px;
 }
-
-
-
 
 main
 {
@@ -248,7 +301,11 @@ height: 250px;
     width: 30%;
     background-color: darkgray;
 	border-radius: 15px;
-
+}
+.fa-chart-line
+{
+    font-size: 20px;
+ 
 }
 
 figure 
@@ -298,42 +355,43 @@ img
 
 }
 
-
-
-
 footer
 {
     width: 100%;
-    height: 150px;
     font-family: 'ralewayregular', serif;
     background-color: lightslategray;
-
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-footer h2
+
+#pied h3
 {
-    margin: 15px;
+margin-left: 40px;
 }
 
-li
+#pied
 {
-    text-align: left;
-}
-#propos, #hebergement, #assistance
-{
-    display: inline-block;
-    vertical-align: top;
+    height: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style-type: none;
+    justify-content: space-between;
 
 }
+#pied ul
+{
+    list-style-type: none;
+}
+
 #propos
 {
     width: 25%;
 }
-#propos ul
-{
-    margin: 0;
-    padding-left: 2px;
-}
+
 #hebergelent
 {
     width: 28%;
