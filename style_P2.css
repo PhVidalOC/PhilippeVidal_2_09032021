@@ -34,15 +34,17 @@ body
 
 #bloc_page
 {
-    width: 900px;
+    width: 1200px;
     margin: auto;
+    border-style: double;
+    border-color: blue;
 }
 
 #titre_principal
 {
     display: flex;
     justify-content: space-between;
-
+    margin: 30px;
 }
 
 #logo img
@@ -96,7 +98,7 @@ h2
 h3
 {
     font-family: 'ralewaybold', serif;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 h4
@@ -110,6 +112,10 @@ h5
     font-family: 'ralewayregular', serif;
     font-size: 0.7em;}
 
+.trouver
+{
+    margin: 30px;
+}
 
 #recherche
 {
@@ -125,7 +131,7 @@ h5
     border-style: solid;
     border-color: #F2F2F2;
     font-family: 'ralewaybold', serif;
-    margin-top: 20px;
+    margin: 30px;
 }
 #map
 {
@@ -137,7 +143,7 @@ h5
 }
 .fa-map-marker-alt
 {   
-    padding-top: 6px;
+  
     padding-left: 6px;
 }
 #ville_fr
@@ -160,7 +166,7 @@ button
 #filtres
 {
     font-family: 'ralewaybold', serif;
-    width: 80%;    
+    width: 70%;    
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -168,6 +174,10 @@ button
 
     margin-left: 30px;
     margin-top: 40px;
+}
+.filtre h3
+{
+    text-align: right;
 }
 .filter
 {
@@ -183,6 +193,7 @@ button
     border-style: solid;
     border-color: #F2F2F2;
     margin-top: 10px;
+    padding-right: 15px;
 }
 .iconfilter
 {
@@ -191,6 +202,7 @@ button
     height: 30px;
     border-radius: 15px;
     background-color: #DEEBFF;
+    margin-right: 15px;
 
 }
 .fa-map-marker-alt, .fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave
@@ -201,15 +213,11 @@ button
 .filter p
 {
     color: #000000;
-    margin-left: 30px;
-    padding-right: 15px;
 }
-
 
 .info
 {
-
-    margin-left: 15px;
+    margin-left: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -240,16 +248,59 @@ button
 main
 {
     font-family: 'ralewayregular', serif;
-    width: 100%;
-    margin: 15px;
+    
+    margin-left: 15px;
+    margin-right: 15px;    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between
 }
 
+main h1
+{
+    margin: 10px;
+}
 main h2
 {
     padding-top: .5em;
-    padding-left: .5em;
+}
+
+.ville
+{
+    width: 70%;
+    text-align: left;
+    position: relative;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+}
+.marseille
+{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.fig1
+{
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 25%;
+    height: 150px;
+    display: flex;
+    padding: 3px;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    line-height: .7em;
+
+}
+
+.fig1 img
+{
+    height: 60%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 .fa-star
@@ -259,101 +310,139 @@ main h2
     padding-bottom: 12px;
 }
 
-figcaption 
+.fig1 figcaption 
 {
     font-family: 'ralewaybold', serif;
-    height: 50px;
     padding: 10px;
     text-align: left;
-    font-size: 20px;
-
 }
+
+
 figure p
 {
     font-family: 'ralewayregular', serif;
-    font-size: 15px;
+    font-size: 10px;
 }
 
-.ville
-{
-    position: relative;
-	background-color: darkgray;
-	border-radius: 15px;
-	width: 60%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    align-content: space-between;
-    text-align: left;
-}
-
-.fig1
-{
-width: 30%;
-height: 250px;
-
-}
 
 
 .populaires
 {
     text-align: left;
-    width: 30%;
-    background-color: darkgray;
+    width: 25%;
+    background-color: #f2f2f2;
 	border-radius: 15px;
+    margin: 10px;
 }
+
+.populaires h1
+{
+    width: 100%;
+}
+
 .fa-chart-line
 {
     font-size: 20px;
- 
+justify-items: right;
 }
 
-figure 
+
+.fig2
 {
-    background-color: #FF00FF;
-    border: thin #c0c0c0 solid;
+    height: 125px;
+    width: 250px;
     border-radius: 15px;
-    width: 175px;
-	height: 150px;
+    background-color: #ffffff;
     display: flex;
+    flex-direction: row;
     padding: 3px;
-    flex-direction: column;
-    background-size: cover;
+}
+.fig2 img
+{
+    width: 50%;
+    height: 125px;
+    border-radius: 10px  0 0 10px;
+
+    object-fit: cover;
+}
+.fig2 figcaption 
+{
+    font-family: 'ralewaybold', serif;
+    padding: 10px;
     text-align: left;
-    
-    
-}
-
-figure h3
-{
-    font-size: 1em;
-}
-figure h4
-{
-    font-size: .7em;
-}
-
-img 
-{
-	height: 60%;
-    border-radius: 10px 10px 0 0;
-  
+    align-content: flex-end;
 }
 
 
-
-
-
-.activites
+article
 {
     font-family: 'ralewayregular', serif;
-    width: 100%;
-    height: 350px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 30px;
+    align-content: flex-start;
+    align-content: space-between;
+    background-color: aquamarine;
+    
+}
+
+
+.actcfig
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+
+
+
+
+       
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    
 
 }
+
+
+.fig_v
+{
+    width: 25%;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-content: flex-start;
+    flex-direction: column;    
+    border-style: solid;
+    border-color: #8d2d2d;
+
+   
+
+
+}
+
+.fig_h
+{
+    width: 25%;
+    height: 25px;   
+    display: flex;
+    justify-content: left;
+    align-content: flex-start;
+    flex-direction: column; 
+    border-style: solid 
+   
+
+
+}
+
+
+
 
 footer
 {
@@ -380,6 +469,7 @@ margin-left: 40px;
     align-content: flex-start;
     list-style-type: none;
     justify-content: space-between;
+    margin-bottom: 0px;
 
 }
 #pied ul
