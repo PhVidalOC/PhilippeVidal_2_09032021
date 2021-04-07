@@ -43,9 +43,9 @@
                 <div id= "map">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <form id= "ville_fr" method="post" action="#">
+                <form id= "city_fr" method="post" action="#">
                     <p>
-                        <input type="text" name="ville" id="ville" placeholder="Marseille, France"/>
+                        <input type="text" name="city" id="city" placeholder="Marseille, France"/>
                     </p>
                 </form>
                     <p class="button">
@@ -57,7 +57,7 @@
         <!-- filtres _ 4 Banieres-->
         <aside >
             <div id= "filtres">
-                <div>
+                <div class= "filtres_titl">
                     <p>Filtres<p>
                 </div>
                 <div class="filter">
@@ -106,17 +106,17 @@
             <!-- liste -->
             <!-- lieu, tarif, avis-->
             <section class="ville">
-                <h2 id="hebergement">Hebergements à Marseille</h2>
+                <h1 id="hebergement">Hebergements à Marseille</h1>
                 <div class= marseille>
                     <figure class= "fig1">
                         <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="la_canebiére"/>
                         <figcaption>Auberge la canebiere
-                        <p>Nuit à partir de 25€</p>
+                        <p>Nuit à partir de <strong>25€</strong></p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star" style="color: #deebff;"></i>
+                        <i class="fas fa-star" style="color: #f2f2f2;"></i>
                         </figcaption>
                     </figure>
     
@@ -140,7 +140,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star" style="color: #deebff;"></i>
+                        <i class="fas fa-star" style="color: #f2f2f2;"></i>
                         </figcaption>
                     </figure>
     
@@ -151,20 +151,20 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star" style="color: #deebff;"></i>
-                    <i class="fas fa-star" style="color: #deebff;"></i>
+                    <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                    <i class="fas fa-star" style="color: #f2f2f2;"></i>
                     </figcaption>
                     </figure>
     
                     <figure class= "fig1">
                     <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="panier"/>
                     <figcaption>Auberge Le Panier
-                    <p>Nuit à partir de 23€<p>
+                    <p>Nuit à partir de <strong>23€</strong><p>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star" style="color: #deebff;"></i>
+                    <i class="fas fa-star" style="color: #f2f2f2;"></i>
                     </figcaption>
                     </figure>
     
@@ -179,7 +179,6 @@
                     <i class="fas fa-star"></i></figcaption>
                     </figure>
                 </div>
-    
                 <h3>Afficher plus</h3>
             </section>
         
@@ -188,12 +187,7 @@
             <!-- Nav _ Logo Les plus populaire-->
             <!-- lieu, tarif, avis-->
             <section class="populaires">
-                    <div class="pop-title">
-	                        <h2>Les plus populaires</h2>
-                        <div>
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
+                <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1>
 		        <figure class= "fig2">
                         <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="soleil"/>
                         <figcaption>Hôtel le soleil du matin
@@ -216,7 +210,7 @@
 			        <i class="fas fa-star"></i>
 			        <i class="fas fa-star"></i>
 			        <i class="fas fa-star"></i>
-                    <i class="fas fa-star" style="color: #deebff;"></i>
+                    <i class="fas fa-star" style="color: #f2f2f2;"></i>
                     </figcaption>
 		        </figure>
 
@@ -228,7 +222,7 @@
 			        <i class="fas fa-star"></i>
 			        <i class="fas fa-star"></i>
 			        <i class="fas fa-star"></i>
-                    <i class="fas fa-star" style="color: #deebff;"></i>
+                    <i class="fas fa-star" style="color: #f2f2f2;"></i>
                     </figcaption>
 		        </figure>
             </section>
@@ -236,40 +230,42 @@
 
             <!-- Article Activité ville -->
             <!-- Resultat liste photos avec theme&titre-->
-	    <article class= "activites">
-		    <h2 id="activites">Activités à Marseille</h2>
+	    <section class= "activites">
+		    <h1 id="activity">Activités à Marseille</h1>
 		    <div class= "actcfig">
                     <figure class= "fig_v">
 			            <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port"/>
 			            <figcaption>Vieux Port</figcaption>
                     </figure>
-		            <figure class= "fig_h">
-			            <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort"/>
+		            <div class="img-h">
+                        <figure class= "fig_fort">
+			            <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="FortPomegues"/>
 			            <figcaption>Fort de Pomègues</figcaption>
                     </figure>
-                    <figure  class= "fig_h">
-			            <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul"/>
+                    <figure  class= "fig_iles">
+			            <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles Frioul"/>
 			            <figcaption>Îles du Frioul</figcaption>
                     </figure>
-                
+                    </div>
 		        
                     <figure class= "fig_v">
-			            <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques"/>
+			            <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc des Calanques"/>
 			            <figcaption>Parc National des Calanques</figcaption>
                     </figure>
                 
-                
-		            <figure class= "fig_h">
-			        <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="dame"/>
+                    <div class="img-h">
+		            <figure class= "fig_dame">
+			        <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre dame"/>
 			            <figcaption>Notre Dame de la Garde</figcaption>
                     </figure>
                
-		            <figure class= "fig_h">
+		            <figure class= "fig_longch">
 			        <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp"/>
 			        <figcaption>Parc Longchamp</figcaption>
                     </figure>
+                </div>
             </div>  
-        </article>
+        </section>
 
             <!-- Footer -->
         <footer>
@@ -278,7 +274,7 @@
                         <!-- Fonctionnement_CGV_Confidentialité-->
             <div id= "pied">   
                 <nav class= "propos">
-                    <h3>A propos</h3>
+                    <h2>A propos</h2>
                     <ul>
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditionnement générales de vente</a></li>
@@ -291,7 +287,7 @@
                          <!-- Charte-Qualite_Soumettre Hotel -->
                 
                 <nav class= "hebergements">
-                    <h3>Nos hébergement</h3>
+                    <h2>Nos hébergement</h2>
                     <ul>
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">soumettre votre hôtel</a></li>
@@ -303,7 +299,7 @@
                         <!-- Aide_Contact-->
                 
                 <nav class= "assistance">
-                    <h3>Assistance</h3>
+                    <h2>Assistance</h2>
                     <ul>
                         <li><a href="#">Centre d'aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
