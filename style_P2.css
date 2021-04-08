@@ -31,16 +31,13 @@ body
 {
     font-family: 'ralewayregular', serif, sans-serif;
 }
-
 #bloc_page
 {
-    width: 1030px;
-
+    width: 1440px;
 }
-
 #titre_principal
 {
-    width: 1030px;
+    width: 1300px;
     display: flex;
     justify-content: space-between;
 }
@@ -49,14 +46,19 @@ body
 {
     width: 100px;
     height: 100px;
-    padding-left: 30px;
     padding-top: 15px;
+    
 }
 
 #navigation
 {
     width: 30%;
-    padding-right: 15px;
+}
+nav a
+{
+
+    text-decoration-line: none;
+
 }
 #navigation li
 {
@@ -70,14 +72,14 @@ body
     align-content: flex-end;
 }
 
-nav a
+.nav1 a
 {
     font-family: 'ralewaybold', serif;
 	font-size: 1em;
     text-decoration-line: none;
     padding-top: 30px;
 }
-a:hover
+.nav1 a:hover
 {
     border-top: 2px solid;
     border-top-color: #0065FC;
@@ -87,7 +89,7 @@ a:hover
 {
     color: #0065FC;
 }
-a:active
+nav a:active
 {
     color:#F2F2F2
 }
@@ -99,7 +101,7 @@ section
 
 h1
 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-family: 'ralewaybold', serif;
 }
 h2
@@ -114,21 +116,20 @@ h3
     font-family: 'ralewaybold', serif;
 }
 
-
 .trouver
 {
     width: 50%;
-    margin: 30px;
+    margin: 60px;
 }
 
-#recherche
+#search
 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 300px;    
+    width: 410px;    
     height: 35px;
     border-radius: 20px;
     border-style: solid;
@@ -141,14 +142,14 @@ h3
     height: 40px;
     border-radius: 17px 0 0 17px;
     background-color: #F2F2F2;
-    font-size: .9em;
-
-
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 .fa-map-marker-alt
 {   
-    padding-top: 4px;
-    padding-left: 6px;
+    padding-bottom: 10px;
+    padding-left: 4px;
 }
 #city
 {
@@ -156,47 +157,56 @@ h3
     background:none;
     border: hidden;
 }
+
 #city_fr input
 {
    
     text-align: center;
     font-family: 'ralewaybold', serif;
+    font-size: 1em;
 }
+
 
 .button
 {
-    width: 95px;
+    width: 130px;
     height: 40px;
     border-radius:  0 17px 17px 0;
-    
     background-color: #0065FC;
     color: #FFFFFF;
+    display: flex;
+   
 }
 .button input
 {
     width: 100%;
     height: 100%;
     font-family: 'ralewaybold', serif;
+    font-size: 1em;
     color:#ffffff;
     background-color: unset;
     border:unset
-    
 }
+
+aside
+{
+    margin-left: 60px;
+}
+
 #filtres
 {
     font-family: 'ralewaybold', serif;
-    width: 680px;    
+    width: 920px;    
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
-    font-size: .8em;
-    margin-left: 30px;
+    font-size: 1em;
     margin-top: 40px;
 }
 .filtres_titl
 {
-   margin-top: 10px;
+   align-items: center;
 }
 
 .filter
@@ -211,7 +221,7 @@ h3
     border-style: solid;
     border-color: #F2F2F2;
     margin-top: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .iconfilter
 {
@@ -222,8 +232,13 @@ h3
     background-color: #DEEBFF;
     margin-right: 20px;
     padding-left: unset;
-
 }
+
+.choix a:hover
+{
+    font-size: 1.3em;
+}
+
 .fa-map-marker-alt, .fa-dog, .fa-heart, .fa-child
 {
     margin-top: 10px;
@@ -242,10 +257,11 @@ h3
 
 .info
 {
-    margin-left: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .iconContainer
@@ -272,19 +288,16 @@ h3
 
 main
 {
-    height: 450px;
-    width: 950px;
-    margin-left: 30px;
+    height: 630px;
+    width: 1300px;
+    margin-left: 60px;
     font-family: 'ralewayregular', serif;
     display: flex;
-    justify-content: space-between;
 }
 
 
 .ville
 {
-    height: 450px;
-    width: 650px;
     text-align: left;
 	background-color: #f2f2f2;
 	border-radius: 15px;
@@ -296,36 +309,39 @@ main
 }
 .marseille
 {
-    height: 350px;
-    width: 600px;
+    width: 830px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    padding-left: 25px;
-
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .fig1
 {
-    width: 175px;
-    height: 145px;
+    width: 250px;
+    height: 200px;
     justify-content: flex-start;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 15px;
     border: solid #ffffff;
+    border-width: 6px;
     text-align: left;
-    margin: 0px;
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    
+
 }
 
 .fig1 img
 {
     border-radius: 10px 10px 0 0;
-    height: 85px;
-    width: 175px;
+    height: 115px;
+    width: 250px;
     object-fit: cover;
 }
 
@@ -340,36 +356,35 @@ main
 {
     font-family: 'ralewaybold', serif;
     text-align: left;
-    font-size: .9em;
     padding-left: 10px;
 }
 
 figure p
 {
     font-family: 'ralewayregular', serif;
-    font-size: 10px;
+    font-size: 1em;
 }
 
 .ville h3
 {
     font-size: 1em;
     padding-left: 30px;
-    padding-bottom: 5px;
 }
 
 .populaires
 {
-    width: 290px;
-    height: 450px;
+    width: 380px;
     text-align: left;
     background-color: #f2f2f2;
 	border-radius: 15px;
+    margin-left: 30px;
+    
    
 
 }
 .populaires h1
 {
-   padding-left: 15px;
+   padding-left: 40px;
 }
 .fa-chart-line
 {
@@ -378,25 +393,32 @@ figure p
     padding-left: 50px;
 }
 
+.pop
+{
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .fig2
 {
-    width: 250px;
-    height: 110px;
+    width: 340px;
+    height: 140px;
     border-radius: 15px;
     border: solid #ffffff;
+    border-width: 6px;
     background-color: #ffffff;
     font-size: 1em;
-
     display: flex;
-    margin-left: 20px;
 }
 
 
 .fig2 img
 {
-    width: 100px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;    
     border-radius: 10px  0 0 10px;   
 }
@@ -417,139 +439,137 @@ figure p
 
 .activites
 {
-    width: 950px;
-    height: 350px;
+    width: 1300px;
+
     font-family: 'ralewayregular', serif;
-    font-size: 0.8em;
+   
     margin-top: 0px;
-    margin-left: 30px;
+    margin-left: 60px;
 
 }
-#activity
-{
-    width: 950px;
-}
+
 .actcfig
 {
-    width: 950px;
-    height: 310px;
+    width: 100%;
+    height: 430px;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 15px;  
-    background-color: aquamarine;
+    background-color: #ffffff;
 }
 
+.actcfig img
+{
+    border-radius: 18px 18px 0 0 ;
+}
 .actcfig figure
 {
     flex-flow: column;
     border-radius: 20px;
-    border-style: solid;
-    border-color: #F2F2F2;
+    box-shadow: 0px 6px 6px  #f2f2f2;    
     margin: 0px;
-}
-
-.img-h
-{
-    height: 310px;
-    width: 215px;
-    display: flex;
-    flex-direction: column;
-    align-content:flex-start;
-    justify-content: space-between; 
 }
 
 .fig_v
 {   
-    width: 220px;
-    height: 310px;
-  
+    width: 300px;
+    height: 430px;
 }
 .fig_v img
 {
-    border-radius: 18px 18px 0 0 ;
-    width: 220px;
-    height: 270px;
+    width: 300px;
+    height: 380px;
     object-fit: cover;
 }
-
-
 .actcfig figcaption 
 {
     padding-left: 20px;
     padding-top: 10px;
     text-align: left;
+    font-size: 1em;
     font-family: 'ralewaybold', serif;
 }
 
+
+
+
+.img-h
+{
+    width: 300px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+    justify-content: space-between; 
+}
 .fig_fort
 {
     flex-flow: column;
-    height: 160px; 
-    width: 215px;  
+    width: 300px;
+    height: 230px;  
 }
 
 .fig_fort img
 {
-    width: 215px;
-    height: 120px;
+    width: 300px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 18px 18px 0 0 ;
 }
+
 
 .fig_iles
 {
     flex-flow: column;
-    width: 215px; 
-    height: 115px; 
+    width: 300px; 
+    height: 160px; 
   
 }
 
 .fig_iles img
 {
-    width: 215px;
-    height: 75px;
+    width: 300px;
+    height: 110px;
     object-fit: cover;
-    border-radius: 18px 18px 0 0 ;
 }
 
 .fig_dame
 {
     flex-flow: column;
-    height: 130px; 
-    width: 215px;  
+    width: 300px;
+    height: 190px;   
 }
 
 .fig_dame img
 {
-    width: 215px;
-    height: 90px;
+    width: 300px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 18px 18px 0 0 ;
+    
 }
 
 .fig_longch
 {
     flex-flow: column;
-    height: 140px; 
-    width: 215px;  
+    width: 300px;  
+    height: 200px; 
 }
 
 .fig_longch img
 {
-    width: 215px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 18px 18px 0 0 ;
+    
 }
 
 
 footer
 {
-    width: 1030px;
+    width: 100%;
     font-family: 'ralewayregular', serif;
-    background-color: lightslategray;
+    background-color: #F2F2F2;
     display: flex;
     flex-wrap: nowrap;
     margin-top: 45px;
@@ -559,12 +579,11 @@ footer
 #pied
 {
     height: 150px;
-    width: 760px;
+    width: 1000px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
-    list-style-type: none;
     justify-content: space-between;
 
 }
@@ -574,9 +593,14 @@ footer
 margin-left: 40px;
 }
 
-#pied ul
+.choixpied
 {
     list-style-type: none;
+}
+.choixpied a
+{
+    font-family: 'ralewaybold', serif;
+	font-size: 1em;
 }
 
 #propos
@@ -588,8 +612,6 @@ margin-left: 40px;
 {
     width: 28%;
 }
-#assistance
-{
-    width: 30%;
-}
+
+
 
