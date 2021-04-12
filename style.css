@@ -31,16 +31,20 @@ body
 {
     font-family: 'ralewayregular', serif, sans-serif;
 }
+
 #bloc_page
 {
     width: 1440px;
 }
+
+
 #titre_principal
 {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-left: 4%;
+    flex-wrap: wrap;
+    margin-left: 3%;
 }
 
 #logo img
@@ -48,28 +52,31 @@ body
     width: 100px;
     height: 100px;
     padding-top: 15px;
-    
 }
 
 nav a
 {
     text-decoration-line: none;
-
 }
 #navigation
 {
+    width: 250px;
     display: flex;
     justify-items: flex-end;
     justify-content: space-between;   
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
     padding-top: 45px;
+  
 }
 .navpage
 {
     height: 60px;
-
+}
+.inscription
+{
+    list-style-type: none;
+    padding-top: 45px;
 }
 
 .nav1 a
@@ -79,8 +86,9 @@ nav a
     text-decoration-line: none;
     padding-top: 30px;
     padding-left: 30px;
+    color: #000;
 }
-nav a:hover
+.nav1 a:hover
 {
     border-top: 2px solid;
     border-top-color: #0065FC;
@@ -95,10 +103,7 @@ nav a:active
     color:#F2F2F2
 }
 
-section
-{
-    width: 80%;
-}
+
 
 h1
 {
@@ -119,96 +124,110 @@ h3
 
 .trouver
 {
-    width: 80%;
-    margin: 4%;
-}
-#map
-{
-    width: 40px;
-    height: 40px;
-    border-radius: 17px 0 0 17px;
-    background-color: #F2F2F2;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    margin: 3%;
 }
 #search
 {
+    width: max-content;
+    height: 36px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 410px;    
-    height: 35px;
-    border-radius: 20px;
+    border-radius: 12px;
     border-style: solid;
     border-color: #F2F2F2;
     font-family: 'ralewaybold', serif;
 }
-
+#map
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px 0 0 12px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
 .fa-map-marker-alt
 {   
     padding-bottom: 10px;
-    padding-left: 4px;
+    padding-left: 2px;
 }
+
 #city
 {
-    text-align: center;
+    width: 230px;
     background:none;
     border: hidden;
 }
 
 #city_fr input
 {
-   
-    text-align: center;
     font-family: 'ralewaybold', serif;
     font-size: 1em;
+    padding-left: 20px;
 }
-
-
 .button
 {
     width: 130px;
     height: 40px;
-    border-radius:  0 17px 17px 0;
+    border-radius:  0 12px 12px 0;
     background-color: #0065FC;
     color: #FFFFFF;
-    display: flex;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+
    
 }
 .button input
 {
-    width: 100%;
-    height: 100%;
+    
     font-family: 'ralewaybold', serif;
     font-size: 1em;
     color:#ffffff;
     background-color: unset;
-    border:unset
+    border:unset;
+    
+}
+.fa-search
+{
+   display: none;
 }
 
 aside
 {
-    margin-left: 60px;
+    margin-left: 3%;
 }
-
-#filtres
+.filtresline
 {
-    font-family: 'ralewaybold', serif;
-    width: 80%;    
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 1em;
 
-    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-items: center;
+    
 }
+
 .filtres_titl
 {
-   align-items: center;
+    width: 100px;
+    align-items:baseline;
+    font-family: 'ralewaybold', serif;
+}
+.filtres
+{
+    width: 60%;
+    font-family: 'ralewaybold', serif;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .filter
@@ -216,8 +235,6 @@ aside
     height: 34px;
     border-radius: 17px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     border-style: solid;
     border-color: #F2F2F2;
@@ -287,24 +304,23 @@ aside
     padding-left: 15px;
 }
 
-main
+.logements
 {
-    width: 90%;
+    width: auto;
     
     font-family: 'ralewayregular', serif;
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
-
-
 .ville
 {
     width: 900px;
     text-align: left;
 	background-color: #f2f2f2;
+    
 	border-radius: 15px;
 }
 
@@ -314,7 +330,7 @@ main
 }
 .marseille
 {
-    width: 94%;
+   
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -383,11 +399,13 @@ figure p
     text-align: left;
     background-color: #f2f2f2;
     border-radius: 15px;
-    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .populaires h1
 {
-text-align: center;
+    text-align: center;
 }
 .fa-chart-line
 {
@@ -398,8 +416,9 @@ text-align: center;
 .pop
 {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: column;
+
     padding-bottom: 15px;
 }
 
@@ -446,15 +465,13 @@ text-align: center;
     width: 90%;
     font-family: 'ralewayregular', serif;
     margin-top: 0px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 
 }
 
-.actcfig
+.actifig
 {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
@@ -463,11 +480,11 @@ text-align: center;
     background-color: #ffffff;
 }
 
-.actcfig img
+.actifig img
 {
     border-radius: 18px 18px 0 0 ;
 }
-.actcfig figure
+.actifig figure
 {
     flex-flow: column;
     border-radius: 20px;
@@ -486,7 +503,7 @@ text-align: center;
     height: 380px;
     object-fit: cover;
 }
-.actcfig figcaption 
+.actifig figcaption 
 {
     padding-left: 20px;
     padding-top: 10px;
@@ -564,51 +581,114 @@ text-align: center;
 
 footer
 {
-    width: 100%;
+    width: auto;
     font-family: 'ralewayregular', serif;
     background-color: #F2F2F2;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 45px;
 }
 
 
 #pied
 {
-    width: 75%;
-    height: 100%;
+    width: 90%;
+   
     display: flex;
-    justify-content: center;
+    justify-content:left;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-between;
-
+    margin-left: 3%;
 }
 
 #pied h2
 {
-margin-left: 40px;
+    text-align: left;
+   
 }
 
 .choixpied
 {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+    line-height: 30px;
 }
 .choixpied a
 {
     font-family: 'ralewaybold', serif;
-	
 }
 
-#propos
+
+
+
+@media all and (max-width: 480px)
 {
-    width: 10%;
-}
+    #bloc-page
+    {
+        width: auto;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+       }
 
-#hebergements
+#titre_principal > .inscription
 {
-    width: 10%;
+    order:2;
 }
+#titre_principal > #navigation
+{
+    order:3;
+}
+    #navigation
+    {
+       margin-left: 0px;
+       justify-items: flex-start;
 
+    }
 
+  
+    
+    .button
+    {
+        width: 40px;
+        border-radius: 12px;
+    }
+    .fa-search
+    {
+        display: initial;
+        padding-top: 10px;
+        padding-left: 12px;
+    }
+.button input
+    {
+        display: none;
+    }
 
+    
+.filtresline
+    {
+        
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .filtres_titl
+    {
+        text-align: left;
+    }
+    .filtres
+    {
+        width: 100%;
+    }
+.logements
+{
+    margin: 0%;
+flex-direction: column-reverse;}
+.populaires
+    {
+        width: 100%;
+    border-radius: 0;
+    }
+}
