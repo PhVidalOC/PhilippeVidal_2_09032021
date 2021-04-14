@@ -42,11 +42,15 @@ body
 {
     width: 90%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between; 
+
     margin-left: 3%;
 }
-
+#logo
+{
+    margin-right: 50%;
+}
 #logo img
 {
     width: 100px;
@@ -58,47 +62,45 @@ nav a
 {
     text-decoration-line: none;
 }
+
 #navigation
 {
-    width: 250px;
     display: flex;
-    justify-items: flex-end;
-    justify-content: space-between;   
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: space-between; 
+    flex-wrap: nowrap;
     list-style-type: none;
     padding-top: 45px;
-  
+    margin-left: 60px;
 }
-.navpage
-{
-    height: 60px;
-}
-.inscription
-{
-    list-style-type: none;
-    padding-top: 45px;
-}
-
 .nav1 a
 {
     font-family: 'ralewaybold', serif;
 	font-size: 1em;
+    text-align: right;
     text-decoration-line: none;
     padding-top: 30px;
-    padding-left: 30px;
-    color: #000;
+    margin-left: 50px;
 }
+
+ .inscription
+{
+    list-style-type: none;
+    padding-top: 45px;
+}  
+
+
 .nav1 a:hover
 {
     border-top: 2px solid;
     border-top-color: #0065FC;
 }
 
-.navigation a:visited
+ a:visited
 {
     color: #0065FC;
 }
-nav a:active
+a:active
 {
     color:#F2F2F2
 }
@@ -152,15 +154,15 @@ h3
 }
 .fa-map-marker-alt
 {   
-    padding-bottom: 10px;
     padding-left: 2px;
 }
+
 
 #city
 {
     width: 230px;
-    background:none;
-    border: hidden;
+    border-color: transparent;
+    
 }
 
 #city_fr input
@@ -177,21 +179,19 @@ h3
     background-color: #0065FC;
     color: #FFFFFF;
     text-align: center;
-  display: flex;
-  justify-content: center;
-
-   
+    display: flex;
+    justify-content: center;
 }
 .button input
 {
-    
     font-family: 'ralewaybold', serif;
     font-size: 1em;
     color:#ffffff;
-    background-color: unset;
+    background-color: transparent;
     border:unset;
     
 }
+
 .fa-search
 {
    display: none;
@@ -203,13 +203,12 @@ aside
 }
 .filtresline
 {
-
+    width: 100%;
     display: flex;
     justify-content: left;
 
     flex-wrap: wrap;
     align-items: flex-start;
-    align-items: center;
     
 }
 
@@ -221,12 +220,13 @@ aside
 }
 .filtres
 {
-    width: 60%;
+    width: 70%;
     font-family: 'ralewaybold', serif;
     font-size: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 1%;
 
 }
 
@@ -239,7 +239,7 @@ aside
     border-style: solid;
     border-color: #F2F2F2;
     margin-top: 10px;
-    padding-right: 20px;
+    padding-right: 18px;
 }
 .iconfilter
 {
@@ -248,8 +248,9 @@ aside
     height: 38px;
     border-radius: 19px;
     background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
     margin-right: 20px;
-    padding-left: unset;
 }
 
 .choix a:hover
@@ -259,12 +260,10 @@ aside
 
 .fa-map-marker-alt, .fa-dog, .fa-heart, .fa-child
 {
-    margin-top: 10px;
     margin-left: 10px;
 }
 .fa-money-bill-wave
 {
-    margin-top: 10px;
     margin-left: 8px;
 }
 .filter p
@@ -307,7 +306,6 @@ aside
 .logements
 {
     width: auto;
-    
     font-family: 'ralewayregular', serif;
     display: flex;
     justify-content: space-between;
@@ -320,54 +318,64 @@ aside
     width: 900px;
     text-align: left;
 	background-color: #f2f2f2;
-    
 	border-radius: 15px;
 }
 
 .ville h1
 {
-    padding-left: 3%;
+    margin-left: 5%;
 }
 .marseille
 {
-   
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     justify-content: space-between;
+    align-content: flex-start;
     margin-left: 3%;
     margin-right: 3%;
+}
 
+.boxfig1
+{
+    
+    background-color:#ffffff;
+    border-radius: 15px;
+    border: solid ;
+    border-width: 4px;
+    border-color: #ffffff;
+    font-size: 1em;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .fig1
 {
     width: 250px;
-    height: 190px;
     display: flex;
+    justify-content: center;
     justify-content: flex-start;
     flex-direction: column;
-    background-color:#ffffff;
-    border-radius: 15px;
-    border: solid ;
-    border-color: #ffffff;
-    border-width: 4px;
-    text-align: left;
-    line-height: 60%;
-    font-size: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
+
 }
 
 .fig1 img
 {
     border-radius: 10px 10px 0 0;
     height: 115px;
-    width: 250px;
+    width: 100%;
     object-fit: cover;
 }
-
+.txt1
+{
+    margin-left: 10px;
+}
 .fa-star
 {
     font-size: 10px;
@@ -379,7 +387,6 @@ aside
     font-family: 'ralewaybold', serif;
     text-align: left;
     padding-left: 10px;
-    padding-top: 10px;
 }
 
 figure p
@@ -391,6 +398,7 @@ figure p
 .ville h2
 {
     padding-left: 30px;
+    padding-top: 20px;
 }
 
 .populaires
@@ -402,15 +410,19 @@ figure p
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 2%;
 }
-.populaires h1
+.poph1
 {
-    text-align: center;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .fa-chart-line
 {
     font-size: 20px;
-    padding-left: 100px;
 }
 
 .pop
@@ -418,7 +430,6 @@ figure p
     display: flex;
     justify-content: center;
     flex-direction: column;
-
     padding-bottom: 15px;
 }
 
@@ -432,6 +443,7 @@ figure p
     background-color: #ffffff;
     font-size: 1em;
     display: flex;
+    justify-items: center;
       
 }
 .fig2 img
@@ -462,7 +474,7 @@ figure p
 
 .activites
 {
-    width: 90%;
+    width: auto;
     font-family: 'ralewayregular', serif;
     margin-top: 0px;
     margin-left: 3%;
@@ -473,11 +485,12 @@ figure p
 .actifig
 {
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
+    justify-content: center;
     justify-content: space-between;
     border-radius: 15px;  
     background-color: #ffffff;
+    margin: auto;
 }
 
 .actifig img
@@ -486,7 +499,6 @@ figure p
 }
 .actifig figure
 {
-    flex-flow: column;
     border-radius: 20px;
     box-shadow: 0px 6px 6px  #f2f2f2;    
     margin: 0px;
@@ -523,13 +535,14 @@ figure p
 }
 .fig_fort
 {
-    flex-flow: column;
+    flex-flow: wrap;
     width: 300px;
     height: 230px;  
 }
 
 .fig_fort img
 {
+    flex-flow: wrap;
     width: 300px;
     height: 180px;
     object-fit: cover;
@@ -538,7 +551,7 @@ figure p
 
 .fig_iles
 {
-    flex-flow: column;
+    flex-flow: wrap;
     width: 300px; 
     height: 160px; 
 }
@@ -586,13 +599,13 @@ footer
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 45px;
+    margin-top: 60px;
+    padding-bottom: 40px;
 }
-
 
 #pied
 {
-    width: 90%;
+    width: 100%;
    
     display: flex;
     justify-content:left;
@@ -600,21 +613,23 @@ footer
     align-content: flex-start;
     justify-content: space-between;
     margin-left: 3%;
+    margin-right: 3%;
 }
 
 #pied h2
 {
     text-align: left;
-   
 }
 
 .choixpied
 {
+    width: 300px;
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    line-height: 30px;
+    padding-top: 15px;
 }
+
 .choixpied a
 {
     font-family: 'ralewaybold', serif;
@@ -629,28 +644,41 @@ footer
     {
         width: auto;
     }
-    * {
-        margin: 0;
-        padding: 0;
-       }
-
-#titre_principal > .inscription
-{
-    order:2;
-}
-#titre_principal > #navigation
-{
-    order:3;
-}
+    
+    #logo
+    {
+        margin-right: 0%;
+    }
+    #titre_principal > .inscription
+    {
+        order:2;
+    }
+    #titre_principal > #navigation
+    {
+        order:3;
+    }
     #navigation
     {
-       margin-left: 0px;
+       padding-top: 0;
+        margin-left: 0px;
        justify-items: flex-start;
-
     }
-
-  
+    .nav1 a
+    {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .nav1 a:hover
+    {
+        border-top: none;
+        border-bottom: 2px solid;
+    }
     
+    .trouver h1
+    {
+        width: 90%;
+        padding-bottom: 15px;
+    }
     .button
     {
         width: 40px;
@@ -660,35 +688,162 @@ footer
     {
         display: initial;
         padding-top: 10px;
-        padding-left: 12px;
     }
-.button input
+    .button input
     {
         display: none;
     }
 
     
-.filtresline
+    .filtresline
     {
-        
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
     }
     .filtres_titl
     {
-        text-align: left;
+        margin: 2%;
+    align-items:flex-start    
     }
     .filtres
     {
-        width: 100%;
+        width: 95%;
     }
-.logements
-{
-    margin: 0%;
-flex-direction: column-reverse;}
-.populaires
+    .logements
+    {
+        flex-wrap: wrap-reverse;
+    }
+
+    .populaires
     {
         width: 100%;
-    border-radius: 0;
+        border-radius: 0;
+        margin: auto;
+        padding-top: 40px;
+    }
+   
+    .fig2
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+    .ville
+    {
+        width:100%;
+        margin: auto;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .fig1
+    {
+        width: 100%;
+        line-height: 130%;
+    }
+    .fig1 img 
+    {
+        width: 100%;
+        height: 120px;  
+    }
+    .ville h2
+    {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .activites
+    {
+        margin-top: 0px;
+        margin:auto;
+        margin-top: 40px;
+    }
+    #activity
+    {
+        margin-left: 3%;
+    }
+    .actifig
+    {
+        width: 100%;
+        margin-left: 3%;
+    }
+    .fig_v
+    {
+        width: 90%;
+        height: 180px;
+    }
+    .fig_v img
+    {
+        width: 100%;
+        height: 130px;
+    }
+    .img-h
+    {
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .fig_fort
+    {
+        width: 100%;
+        height: 180px;  
+    }
+
+    .fig_fort img
+    {
+        width: 100%;
+        height: 140px;
+    }
+
+    
+    .fig_iles
+    {
+        width: 100%; 
+        height: 180px;
+        margin-bottom: 50px;
+    }
+
+    .fig_iles img
+    {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .fig_dame
+    {  
+        width: 100%;
+        height: 180px;   
+    }
+
+    .fig_dame img
+    {
+        width: 100%;
+        height: 140px;
+    }
+
+    .fig_longch
+    {  
+        width: 100%;
+        height: 180px;   
+    }
+
+    .fig_longch img
+    {
+        width: 100%;
+        height: 140px;
+    }
+   
+    .propos
+    {
+        margin-bottom: 40px;
+    }
+    .hebergements
+    {
+        margin-bottom: 40px;
+    }
+    .assistance
+    {   
+        margin-bottom: 40px;
     }
 }
