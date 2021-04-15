@@ -163,14 +163,17 @@ h3
     width: 230px;
     border-color: transparent;
     
+    
 }
-
 #city_fr input
 {
     font-family: 'ralewaybold', serif;
     font-size: 1em;
     padding-left: 20px;
+    outline:transparent
+    
 }
+
 .button
 {
     width: 130px;
@@ -189,7 +192,7 @@ h3
     color:#ffffff;
     background-color: transparent;
     border:unset;
-    
+    outline: unset;
 }
 
 .fa-search
@@ -635,10 +638,86 @@ footer
     font-family: 'ralewaybold', serif;
 }
 
+@media all and (min-width: 701px) and (max-width: 1100px)
+{
+    #bloc-page
+    {
+        width: auto;
+    }
+    #logo
+    {
+        width: 100%;
+        margin:0;
+    }
+    #navigation
+    {
+        margin: 0;
+        padding-right: 0;
+        padding-top: 0;
+        justify-content: left;
+        flex-direction: row;      
+    }
+    .inscription
+    {
+        padding-top: 0;
+    }
+    .nav1 a
+    {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .nav1 a:hover
+    {
+        border-top: none;
+        border-bottom: 2px solid;
+    }
 
 
 
-@media all and (max-width: 480px)
+    .logements
+    {
+        width: 95%;
+        margin: auto;
+        margin-top: 20px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .populaires
+    {
+        
+        padding-top: 20px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+   .ville
+   {
+       margin-top: 40px;
+   }
+    .fig2
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .activites
+    {
+        width: 85%;
+        
+        margin: auto;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .img-h
+    {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media all and (max-width: 700px)
 {
     #bloc-page
     {
@@ -754,7 +833,6 @@ footer
     }
     .activites
     {
-        margin-top: 0px;
         margin:auto;
         margin-top: 40px;
     }
@@ -846,4 +924,46 @@ footer
     {   
         margin-bottom: 40px;
     }
+}
+
+
+@media all and (min-width: 500px) and (max-width: 1439px)
+{
+    #bloc-page
+    {
+        width: auto;
+    }
+    #logo
+    {
+        margin:0;
+    }
+    #navigation
+    {
+        width: 75%;
+        margin: 0;
+        justify-content: right;
+        flex-direction: row-reverse;
+        padding-right: 0;
+      
+    }
+    .logements
+    {
+        flex-wrap: wrap-reverse;
+    }
+
+    .populaires
+    {
+        margin: auto;
+        padding-top: 40px;
+        flex-wrap: wrap;
+    }
+   
+    .fig2
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
 }
