@@ -23,13 +23,12 @@
          url('polices/raleway-bold-webfont.svg#ralewaybold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 body
 {
     font-family: 'ralewayregular', serif, sans-serif;
+    color: #181818;
 }
 
 #bloc_page
@@ -58,10 +57,6 @@ body
     padding-top: 15px;
 }
 
-nav a
-{
-    text-decoration-line: none;
-}
 
 #navigation
 {
@@ -73,12 +68,43 @@ nav a
     padding-top: 45px;
     margin-left: 60px;
 }
-.nav1 a
+
+nav a
+{
+    text-decoration-line: none;
+    font-size: 0.9em;
+}
+
+  
+a:link
+{
+    text-decoration: none;
+    color:#000000;
+}
+a:visited
 {
     font-family: 'ralewaybold', serif;
-	font-size: 1em;
+    color:#0065FC;
+}
+a:hover
+{
+    font-family: 'ralewaybold', serif;
+}
+
+.nav1 a:hover
+{
+    border-top: 2px solid;
+    border-top-color: #0065FC;
+}
+
+a:active
+{
+    color:#F2F2F2
+}
+
+.nav1 a
+{
     text-align: right;
-    text-decoration-line: none;
     padding-top: 30px;
     margin-left: 50px;
 }
@@ -87,34 +113,17 @@ nav a
 {
     list-style-type: none;
     padding-top: 45px;
-}  
-
-
-.nav1 a:hover
-{
-    border-top: 2px solid;
-    border-top-color: #0065FC;
 }
-
- a:visited
-{
-    color: #0065FC;
-}
-a:active
-{
-    color:#F2F2F2
-}
-
 
 
 h1
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: 'ralewaybold', serif;
 }
 h2
 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: 'ralewaybold', serif;
 	font-weight: normal;
 }
@@ -162,16 +171,14 @@ h3
 {
     width: 230px;
     border-color: transparent;
-    
-    
 }
 #city_fr input
 {
     font-family: 'ralewaybold', serif;
+    color:#000;
     font-size: 1em;
     padding-left: 20px;
     outline:transparent
-    
 }
 
 .button
@@ -191,8 +198,8 @@ h3
     font-size: 1em;
     color:#ffffff;
     background-color: transparent;
-    border:unset;
-    outline: unset;
+    border:transparent;
+    outline: transparent;
 }
 
 .fa-search
@@ -209,10 +216,8 @@ aside
     width: 100%;
     display: flex;
     justify-content: left;
-
     flex-wrap: wrap;
     align-items: flex-start;
-    
 }
 
 .filtres_titl
@@ -230,7 +235,6 @@ aside
     flex-wrap: wrap;
     justify-content: space-between;
     margin-right: 1%;
-
 }
 
 .filter
@@ -272,7 +276,6 @@ aside
 .filter p
 {
     color: #000000;
-    
 }
 
 .info
@@ -351,7 +354,6 @@ aside
     display: flex;
     align-content: flex-start;
     justify-content: center;
-
     flex-direction: column;
     margin: auto;
     margin-top: 30px;
@@ -365,7 +367,6 @@ aside
     justify-content: flex-start;
     flex-direction: column;
     margin: 0;
-
 }
 
 .fig1 img
@@ -392,10 +393,10 @@ aside
     padding-left: 10px;
 }
 
-figure p
+.boxfig1 p
 {
     font-family: 'ralewayregular', serif;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .ville h2
@@ -447,7 +448,6 @@ figure p
     font-size: 1em;
     display: flex;
     justify-items: center;
-      
 }
 .fig2 img
 {
@@ -468,6 +468,13 @@ figure p
     padding-left: 15px;
     padding-right: 10px;
 }
+
+figure p
+{
+    font-family: 'ralewayregular', serif;
+    font-size: 0.9em;
+}
+
 .stars2
 {
     width: 70px;
@@ -482,7 +489,6 @@ figure p
     margin-top: 0px;
     margin-left: 3%;
     margin-right: 3%;
-
 }
 
 .actifig
@@ -523,7 +529,7 @@ figure p
     padding-left: 20px;
     padding-top: 10px;
     text-align: left;
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: 'ralewaybold', serif;
 }
 
@@ -594,7 +600,6 @@ figure p
     object-fit: cover;
 }
 
-
 footer
 {
     width: auto;
@@ -609,7 +614,6 @@ footer
 #pied
 {
     width: 100%;
-   
     display: flex;
     justify-content:left;
     flex-wrap: wrap;
@@ -630,13 +634,13 @@ footer
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding-top: 15px;
+    
 }
 
 .choixpied a
 {
-    font-family: 'ralewaybold', serif;
-}
+line-height: 1.5em;}
+
 
 @media all and (min-width: 701px) and (max-width: 1100px)
 {
@@ -927,7 +931,7 @@ footer
 }
 
 
-@media all and (min-width: 500px) and (max-width: 1439px)
+@media all and (min-width: 1101px) and (max-width: 1439px)
 {
     #bloc-page
     {
@@ -944,7 +948,6 @@ footer
         justify-content: right;
         flex-direction: row-reverse;
         padding-right: 0;
-      
     }
     .logements
     {
@@ -963,7 +966,10 @@ footer
         width: 90%;
         margin: auto;
         margin-top: 20px;
-
     }
 
+    .ville
+    {
+        margin-top: 40px;
+    }
 }
